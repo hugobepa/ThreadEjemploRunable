@@ -25,6 +25,10 @@ public class ThreadEjemplo  extends Thread {
     }    
     public static void main (String [] args) 
     { 
+        /*
+         ThreadEjemplo ejemplo = new ThreadEjemplo(); 
+         Thread thread = new Thread (ejemplo, "Pepe"); thread.start();
+        */
         new Thread (new ThreadEjemplo(),"Pepe").start(); 
         new Thread(new ThreadEjemplo(),"Juan").start(); 
         System.out.println("Termina    thread    main");    
